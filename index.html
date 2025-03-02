@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>优雅电子相册</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="admin-panel">
+        <div class="admin-controls">
+            <input type="file" id="imageUpload" accept="image/*" style="display: none">
+            <button class="admin-btn" id="addImageBtn">添加图片</button>
+            <button class="admin-btn" id="toggleEditMode">切换编辑模式</button>
+            <button class="admin-btn" id="publishBtn">发布相册</button>
+            <button class="admin-btn" id="shareBtn">分享到钉钉</button>
+        </div>
+    </div>
+
+    <!-- 添加上传提示框 -->
+    <div class="upload-status" style="display: none;">
+        <div class="status-content">
+            <div class="status-text">正在上传...</div>
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="photo-album">
+        <div class="book">
+            <div class="page-container">
+                <!-- 页面将通过 JavaScript 动态添加 -->
+            </div>
+        </div>
+        
+        <div class="controls">
+            <button class="prev-btn">上一页</button>
+            <span class="page-number">1 / 1</span>
+            <button class="next-btn">下一页</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
